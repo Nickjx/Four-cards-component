@@ -1,0 +1,192 @@
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/poppins-v21-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/poppins-v21-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/poppins-v21-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --main-text-color: #4D4F62;
+  --main-bg-color: #FAFAFA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0px 10px;
+}
+
+body {
+  font-style: normal;
+  line-height: normal;
+  font-family: "Poppins";
+  background-color: #FAFAFA;
+}
+
+.flex {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main {
+  padding: 80px 0px 0px 0px;
+  row-gap: 64px;
+}
+
+.main-heading {
+  align-items: center;
+}
+
+.main-heading div {
+  max-width: 540px;
+  align-items: center;
+}
+
+.main-heading div > h1 span {
+  color: var(--main-text-color);
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+}
+
+.main-heading div > h1 {
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 13px;
+}
+
+.main-heading div > p {
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+}
+
+.main-cards {
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.main-cards article div {
+  max-width: 350px;
+  padding: 28px 32px 32px 32px;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+
+.main-cards article:nth-child(1) div {
+  border-top: 4px solid #44D3D2;
+}
+
+.main-cards article:nth-child(2) div {
+  border-top: 4px solid #EA5454;
+}
+
+.main-cards article:nth-child(2) div:nth-child(2) {
+  border-top: 4px solid #FCAE4A;
+}
+
+.main-cards article:nth-child(3) div {
+  border-top: 4px solid #549EF2;
+}
+
+.main-cards article div > h2 {
+  color: var(--main-text-color);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.main-cards article div > p {
+  color: var(--main-text-color);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 40px;
+}
+
+.card1 span,
+.card2 span,
+.card3 span {
+  align-content: end;
+}
+
+.card1,
+.card3 {
+  justify-content: center;
+}
+
+.card2 {
+  row-gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 311px;
+  }
+  .main {
+    row-gap: 76px;
+    padding: 82px 0px;
+  }
+  .main-cards {
+    justify-content: center;
+    row-gap: 24px;
+  }
+  .main-heading div > h1 span, .main-heading div > h1 {
+    font-size: 24px;
+    letter-spacing: 0.16px;
+  }
+  .main-cards article div > h2 {
+    margin-bottom: 0px;
+  }
+  .main-cards article div > p {
+    margin-bottom: 33px;
+  }
+  .main-cards article img {
+    width: 57px;
+    height: 57px;
+  }
+}/*# sourceMappingURL=styles.css.map */
